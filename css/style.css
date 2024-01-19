@@ -4,6 +4,7 @@ body {background-color: #666;}
 .card,
 .card * {
   box-sizing: border-box;
+  position: relative;
 }
 .card {
   display: flex;
@@ -11,7 +12,7 @@ body {background-color: #666;}
   gap: 10px;
   align-items: flex-start;
   justify-content: flex-start;
-  position: relative;
+  
   margin: 300px;
 }
 .w-box {
@@ -20,16 +21,19 @@ body {background-color: #666;}
   height: 100.99px;
   position: static;
 }
-.box {
+.box {position: relative;
   background: #ffffff;
   border-radius: 30.3px 0px 30.3px 0px;
-  width: 664.54px;
+  width: 700px;
   height: 100.99px;
   position: absolute;
   left: calc(50% - 332.27px);
   top: 0px;
 }
 .text {
+  position: absolute;
+  left: 180px;
+  /* border:1px solid red; */
   display: flex;
   flex-direction: row;
   gap: 144px;
